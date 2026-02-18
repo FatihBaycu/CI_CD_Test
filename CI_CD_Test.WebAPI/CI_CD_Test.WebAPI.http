@@ -1,0 +1,6 @@
+@CI_CD_Test.WebAPI_HostAddress = http://localhost:5165
+
+GET {{CI_CD_Test.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
