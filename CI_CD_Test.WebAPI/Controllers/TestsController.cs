@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace CI_CD_Test.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class TestsController : ControllerBase
-    {
+    {        
         [HttpGet]
         public IActionResult Get()
         {
