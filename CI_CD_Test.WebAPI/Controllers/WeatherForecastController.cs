@@ -8,7 +8,7 @@ namespace CI_CD_Test.WebAPI.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Dondurucu", "Ayaz", "Serin", "Soðuk", "Ilýman", "Ilýk/Sýcak", "Tatlý Sýcak", "Sýcak", "Bunaltýcý Sýcak", "Kavurucu Sýcak"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
