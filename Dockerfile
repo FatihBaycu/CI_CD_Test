@@ -5,6 +5,8 @@ WORKDIR /src
 # solution ve csproj kopyala
 COPY CI_CD_Test.sln .
 COPY CI_CD_Test.WebAPI/CI_CD_Test.WebAPI.csproj CI_CD_Test.WebAPI/
+COPY CI_CD_Test.Domain/CI_CD_Test.Domain.csproj CI_CD_Test.Domain/
+COPY CI_CD_Test.Infrastructure/CI_CD_Test.Infrastructure.csproj CI_CD_Test.Infrastructure/
 
 # restore
 RUN dotnet restore
