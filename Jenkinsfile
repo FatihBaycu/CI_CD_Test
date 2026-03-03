@@ -1,4 +1,4 @@
-pipeline {
+ï»¿pipeline {
     agent any
 
     environment {
@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing with Docker SDK image...'
-                // Jenkins içinde dotnet olmadığı için dışarıdan SDK imajı çağırıyoruz
+                // Jenkins iÃ§inde dotnet olmadÄ±ÄŸÄ± iÃ§in dÄ±ÅŸarÄ±dan SDK imajÄ± Ã§aÄŸÄ±rÄ±yoruz
                 sh "docker run --rm -v ${WORKSPACE}:/app -w /app mcr.microsoft.com/dotnet/sdk:8.0 dotnet test CI_CD_Test.sln"
             }
         }
